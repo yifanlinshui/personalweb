@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="祝欣蓉个人介绍 - 副教授、院长助理、HarmonyOS应用开发高级工程师，专注于移动应用开发、Java Web、嵌入式开发、数据挖掘与分析。" />
+  <title>祝欣蓉 · 高级工程师 / 副教授</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">祝欣蓉</a>
+      <button class="nav-toggle" id="navToggle" aria-label="切换导航">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">关于我</a></li>
+        <li><a href="#skills" class="nav-link">技能图谱</a></li>
+        <li><a href="#courses" class="nav-link">任教课程</a></li>
+        <li><a href="#honors" class="nav-link">荣誉与任职</a></li>
+        <li><a href="#contact" class="nav-link">联系我</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-text" data-aos="fade-right">
+        <p class="hero-greeting">你好，我是</p>
+        <h1 class="hero-title">祝欣蓉</h1>
+        <p class="hero-subtitle">
+          <span class="text-gradient">副教授 · 院长助理 · 高级工程师</span>
+        </p>
+        <p class="hero-bio">
+          毕业于<span class="highlight">南京航空航天大学</span>，拥有
+          <span class="highlight">HarmonyOS 应用开发高级工程师</span>、
+          <span class="highlight">华为路由交换高级网络工程师</span>、
+          <span class="highlight">华为大数据高级工程师</span> 等多项认证。
+          长期从事移动应用开发、Java Web、嵌入式开发与数据挖掘相关教学与研究工作。
+        </p>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary"><i class="fas fa-user"></i> 了解更多</a>
+          <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> 联系我</a>
+        </div>
+        <div class="hero-stats-mini">
+          <div class="mini-stat"><strong>10</strong><span>任教课程</span></div>
+          <div class="mini-stat"><strong>3</strong><span>工程师认证</span></div>
+          <div class="mini-stat"><strong>5+</strong><span>荣誉称号</span></div>
+        </div>
+      </div>
+      <div class="hero-portrait" data-aos="fade-left">
+        <div class="portrait-ring">
+          <div class="portrait-glow"></div>
+          <img src="assets/photo.jpg" alt="祝欣蓉" class="portrait-img" />
+        </div>
+        <div class="portrait-badges">
+          <span class="badge"><i class="fas fa-certificate"></i> HarmonyOS</span>
+          <span class="badge"><i class="fas fa-network-wired"></i> 华为网络</span>
+          <span class="badge"><i class="fas fa-database"></i> 华为大数据</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="向下滚动">
+      <span></span>
+    </a>
+  </section>
+
+  <section class="section stats-section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-label">ABOUT ME</p>
+        <h2 class="section-title">关于我</h2>
+        <p class="section-desc">十余年的一线教学、工程实践与学生指导经验，专注于软件工程与新一代信息技术的融合。</p>
+      </div>
+      <div class="stats-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="stat-number" data-target="10">0</div>
+          <div class="stat-unit">门</div>
+          <p class="stat-label">任教课程</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-award"></i></div>
+          <div class="stat-number" data-target="3">0</div>
+          <div class="stat-unit">项</div>
+          <p class="stat-label">高级工程师认证</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-unit">项</div>
+          <p class="stat-label">个人荣誉称号</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <div class="stat-number" data-target="3">0</div>
+          <div class="stat-unit">类</div>
+          <p class="stat-label">指导学生竞赛</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="stat-number" data-target="4">0</div>
+          <div class="stat-unit">项</div>
+          <p class="stat-label">企业/社会任职</p>
+        </div>
+      </div>
+
+      <div class="about-detail" data-aos="fade-up" data-aos-delay="200">
+        <div class="detail-card education-card">
+          <div class="detail-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>教育背景</h3>
+          <p><strong>南京航空航天大学</strong></p>
+          <p>扎实的工科背景，为后续移动应用、网络通信与大数据研究奠定了理论与工程基础。</p>
+        </div>
+        <div class="detail-card research-card">
+          <div class="detail-icon"><i class="fas fa-microscope"></i></div>
+          <h3>研究方向</h3>
+          <div class="research-tags">
+            <span class="tag">移动应用开发</span>
+            <span class="tag">Java Web</span>
+            <span class="tag">嵌入式开发</span>
+            <span class="tag">数据挖掘与分析</span>
+          </div>
+          <p>研究方向覆盖软件工程全链路，从终端应用到云端服务，再到数据智能。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-label">SKILL MAP</p>
+        <h2 class="section-title">技能能力图谱</h2>
+        <p class="section-desc">基于工程师认证、任教课程与研究方向的综合能力映射。</p>
+      </div>
+      <div class="skills-layout">
+        <div class="skill-chart-wrap" data-aos="zoom-in">
+          <div id="radarChart" class="chart"></div>
+        </div>
+        <div class="skill-legend" data-aos="fade-left" data-aos-delay="150">
+          <h3>核心能力说明</h3>
+          <div class="legend-item">
+            <span class="legend-dot" style="--color:#3b82f6"></span>
+            <div>
+              <strong>HarmonyOS 移动应用开发</strong>
+              <p>持有 HarmonyOS 应用开发高级工程师认证，主讲鸿蒙移动应用开发课程。</p>
+            </div>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot" style="--color:#06b6d4"></span>
+            <div>
+              <strong>网络与通信技术</strong>
+              <p>华为路由交换高级网络工程师，任教 5G、组网、无线与网络安全课程。</p>
+            </div>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot" style="--color:#8b5cf6"></span>
+            <div>
+              <strong>数据挖掘与大数据</strong>
+              <p>华为大数据高级工程师，主讲数据挖掘技术与应用。</p>
+            </div>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot" style="--color:#10b981"></span>
+            <div>
+              <strong>Java Web 与软件工程</strong>
+              <p>多年 Java Web 开发技术教学经验，覆盖程序设计、数据结构等基础课。</p>
+            </div>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot" style="--color:#f59e0b"></span>
+            <div>
+              <strong>人工智能与竞赛指导</strong>
+              <p>主讲人工智能概论，指导学生斩获蓝桥杯、华为 ICT、大唐杯等赛事大奖。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section courses-section" id="courses">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-label">TEACHING</p>
+        <h2 class="section-title">任教课程分布</h2>
+        <p class="section-desc">十年间承担的课程覆盖移动开发、Web 编程、数据智能与网络通信四大方向。</p>
+      </div>
+      <div class="courses-layout">
+        <div class="course-chart-wrap" data-aos="zoom-in">
+          <div id="courseChart" class="chart"></div>
+        </div>
+        <div class="course-list" data-aos="fade-left" data-aos-delay="150">
+          <h3>课程清单</h3>
+          <div class="course-category" data-cat="移动开发">
+            <div class="cat-header"><span class="cat-dot mobile"></span>移动开发</div>
+            <ul>
+              <li>鸿蒙移动应用开发</li>
+            </ul>
+          </div>
+          <div class="course-category" data-cat="Web与编程">
+            <div class="cat-header"><span class="cat-dot web"></span>Web 与编程</div>
+            <ul>
+              <li>Java Web 开发技术</li>
+              <li>数据结构</li>
+              <li>Java 程序设计</li>
+            </ul>
+          </div>
+          <div class="course-category" data-cat="数据与AI">
+            <div class="cat-header"><span class="cat-dot data"></span>数据与 AI</div>
+            <ul>
+              <li>数据挖掘技术与应用</li>
+              <li>人工智能概论</li>
+            </ul>
+          </div>
+          <div class="course-category" data-cat="网络与通信">
+            <div class="cat-header"><span class="cat-dot network"></span>网络与通信</div>
+            <ul>
+              <li>5G 移动通信技术</li>
+              <li>组网技术</li>
+              <li>无线网络技术</li>
+              <li>园区网络安全技术</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section competition-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-label">MENTORING</p>
+        <h2 class="section-title">指导学生竞赛</h2>
+        <p class="section-desc">2018—2021 年间多次带领学生在 A 类学科竞赛中斩获省级、国家级奖项。</p>
+      </div>
+      <div class="competition-layout">
+        <div class="competition-chart-wrap" data-aos="zoom-in">
+          <div id="competitionChart" class="chart"></div>
+        </div>
+        <div class="competition-info" data-aos="fade-left" data-aos-delay="150">
+          <div class="competition-card">
+            <i class="fas fa-code"></i>
+            <h4>蓝桥杯程序设计大赛</h4>
+            <p>算法与程序设计类核心赛事，连续多年指导学生获奖。</p>
+          </div>
+          <div class="competition-card">
+            <i class="fas fa-network-wired"></i>
+            <h4>华为 ICT 大赛</h4>
+            <p>网络、云计算与人工智能方向的国际性赛事。</p>
+          </div>
+          <div class="competition-card">
+            <i class="fas fa-broadcast-tower"></i>
+            <h4>大唐杯移动通信技术大赛</h4>
+            <p>5G 与移动通信技术实践类竞赛。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section timeline-section" id="honors">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-label">JOURNEY</p>
+        <h2 class="section-title">荣誉与社会任职</h2>
+        <p class="section-desc">教学、科研、社会服务与学生指导的多维成长轨迹。</p>
+      </div>
+      <div class="timeline-tabs" data-aos="fade-up" data-aos-delay="100">
+        <button class="tab-btn active" data-tab="honors">所获荣誉</button>
+        <button class="tab-btn" data-tab="appointments">企业/社会任职</button>
+      </div>
+
+      <div class="timeline-content active" id="honorsTab" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2013</div>
+            <div class="timeline-card">
+              <h4>学院教学竞赛一等奖</h4>
+              <p>在教学设计与课堂呈现方面获得校级认可。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2017</div>
+            <div class="timeline-card">
+              <h4>江苏省微课竞赛二等奖</h4>
+              <p>信息化教学能力在省级微课赛事中获奖。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2018—2021</div>
+            <div class="timeline-card">
+              <h4>竞赛优秀指导教师</h4>
+              <p>多次带领学生获得蓝桥杯、华为 ICT、大唐杯等 A 类赛事省级或国家级大奖。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2020</div>
+            <div class="timeline-card">
+              <h4>江苏省丹阳市教育奔跑奖</h4>
+              <p>地方教育领域的突出贡献荣誉。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">多次</div>
+            <div class="timeline-card">
+              <h4>优秀党员与教学荣誉</h4>
+              <p>曾获江苏省高校优秀共产党员，多次获评校级优秀共产党员、免检教师、学生最喜爱的教师。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-content" id="appointmentsTab" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2019</div>
+            <div class="timeline-card">
+              <h4>浙江华为教程编委会成员</h4>
+              <p>受聘加入《5G 移动通信系列教程》编委会，参与行业教材建设。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2020</div>
+            <div class="timeline-card">
+              <h4>网络安全顾问</h4>
+              <p>受聘丹阳市委网络安全与信息化委员会网络安全顾问。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2020</div>
+            <div class="timeline-card">
+              <h4>专业学会会员</h4>
+              <p>中国计算机学会（CCF）专业会员、人工智能学会会员。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2020</div>
+            <div class="timeline-card">
+              <h4>上海 HDZ 核心组成员</h4>
+              <p>华为开发者社区核心组成员，同年被评为社区贡献领袖。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-label">CONTACT</p>
+        <h2 class="section-title">联系我</h2>
+        <p class="section-desc">欢迎就课程建设、竞赛指导、企业合作与技术交流与我联系。</p>
+      </div>
+      <div class="contact-layout" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-info">
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h4>邮箱</h4>
+            <p>请通过单位或社交平台获取</p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>工作地点</h4>
+            <p>江苏省</p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-university"></i>
+            <h4>所属单位</h4>
+            <p>高校教学与科研岗位</p>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" data-aos="fade-left" data-aos-delay="150">
+          <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" id="name" placeholder="请输入您的姓名" required />
+          </div>
+          <div class="form-group">
+            <label for="email">邮箱</label>
+            <input type="email" id="email" placeholder="请输入您的邮箱" required />
+          </div>
+          <div class="form-group">
+            <label for="message">留言</label>
+            <textarea id="message" rows="5" placeholder="请输入您想交流的内容" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> 发送留言
+          </button>
+          <p class="form-note">本表单为演示交互，留言不会被真实发送。</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 祝欣蓉个人介绍页 · 基于公开资料整理</p>
+      <p class="footer-sub">使用 ECharts 数据可视化 · 静态页面 ·  proudly built for sharing</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="返回顶部"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
